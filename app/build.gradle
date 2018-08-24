@@ -43,5 +43,8 @@ dependencies {
      * 5. Clean project
      * 6. Done
      */
-    implementation 'com.github.danimahardhika:wallpaperboard:1.7.0-b4'
+    /*implementation 'com.github.danimahardhika:wallpaperboard:1.7.0-b4'*/
+    implementation project(path: ':library')
+/*    implementation project(path: ':example')*/
+    implementation 'com.github.apl-devs:appintro:v4.2.3'
 }

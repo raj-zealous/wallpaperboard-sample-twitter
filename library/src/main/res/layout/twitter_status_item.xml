@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_twitter_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentLeft="true"
+             />
+
+        <TextView
+            android:id="@+id/tv_twitter_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000000"
+            android:text="username"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/iv_twitter_image" />
+
+
+
+        <ImageView
+            android:id="@+id/iv_tweet_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/twitter_logo" />
+
+        <TextView
+            android:id="@+id/tv_twitter_user_time"
+            android:layout_width="wrap_content"
+            android:textColor="#cccccc"
+            android:text="time"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            />
+        <TextView
+            android:id="@+id/tv_twitter_user_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_twitter_user_name"
+            android:layout_toRightOf="@id/iv_twitter_image"
+            android:text="description"
+            android:layout_marginBottom="20dp"
+            android:layout_toLeftOf="@id/tv_twitter_user_time"
+             />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_twitter_status_content"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="hello"
+        android:layout_height="wrap_content" />
+</LinearLayout>
